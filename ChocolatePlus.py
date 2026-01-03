@@ -10,8 +10,6 @@ class ChocolatePlus(ControlSurface):
         with self.component_guard():
             self._setup_buttons()
 
-            self.show_message("Chocolate Plus ready")
-
     def _setup_buttons(self):
         # CC 0 → Launch clip
         self.launch_button = ButtonElement(
