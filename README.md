@@ -105,5 +105,5 @@ Importing the preset file will allow you to see and modify the configurations if
 ### Debugging MIDI
 1. Set Control Surface to **None** in **Preferences → MIDI → Control Surface**
 2. Create a MIDI track and insert the **MIDI Monitor** MIDI Effect before any other devices. Select **Flow** and then press buttons on the foot switch to see the messages that are received by Live. These should be **CTL** values corresponding to those documented in this README.
-3. Re-enable the Control Surface
+3. Set the Control Surface back to **ChocolatePlus**
 
