@@ -92,8 +92,6 @@ Importing the preset file will allow you to see and modify the configurations un
 * **D (short press, CC 6):** Select the next track.
 * **D (long press, CC 7):** Select the next scene.
 
-> If no clip exists in that slot, pressing delete will do nothing.
-
 ## Troubleshooting
 
 ### Control Surface does not appear in Live settings:
