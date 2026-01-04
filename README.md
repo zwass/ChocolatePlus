@@ -2,40 +2,42 @@
 
 ## Overview
 
-**Chocolate Plus** is a custom Ableton control surface script that allows your M-Vave Chocolate Plus footswitch to control clips in **Session View**.
+**Chocolate Plus**  is an Ableton Live Control Surface script that allows your M-Vave Chocolate Plus footswitch to control clips in **Session View**.
 
 It is **selection-aware**, meaning it targets the **currently selected track and scene**.
 
-No Max for Live is required.
+This has only been tested on macOS with Live 12 Suite but should also work on Windows and other Live 12 editions.
 
 ## Features
 
-| Button          | CC Number | Action                                                      |
-| --------------- | --------- | ----------------------------------------------------------- |
+| Button              | CC Number | Action                                                      |
+| ------------------- | --------- | ----------------------------------------------------------- |
 | **A (short press)** | 0         | Launch the clip in the **currently selected track + scene** |
 | **A (long press)**  | 1         | Delete the clip in the **currently selected track + scene** |
-| **C (short press)** | 4         | Select the previous **track**                                   |
-| **C (long press)**  | 5         | Select the previous **scene**                                   |
-| **D (short press)** | 6         | Select the next **track**                                       |
-| **D (long press)**  | 7         | Select the next **scene**                                       |
+| **C (short press)** | 4         | Select the previous **track**                               |
+| **C (long press)**  | 5         | Select the previous **scene**                               |
+| **D (short press)** | 6         | Select the next **track**                                   |
+| **D (long press)**  | 7         | Select the next **scene**                                   |
 
 > The **B** button is not yet configured. It can be MIDI-mapped as desired. If you have an idea of how to best use this button, please [file an issue on GitHub](https://github.com/zwass/ChocolatePlus/issues/new).
 
 ## Installation
 
-### Step 1: Locate User Remote Scripts Folder
+### Step 1: Locate Remote Scripts folder
 
-**macOS:**
-```
-~/Music/Ableton/User Library/Remote Scripts/
-```
+Find your Ableton User Library.
 
-**Windows:**
+**macOS (default location):**
 ```
-%USERPROFILE%\Documents\Ableton\User Library\Remote Scripts\
+~/Music/Ableton\User Library
 ```
 
-> If the `Remote Scripts` folder does not exist, create it.
+**Windows (default location):**
+```
+%USERPROFILE%\Documents\Ableton\User Library
+```
+
+If there is no `Remote Scripts` folder within the User Library, create one.
 
 ### Step 2: Get the Script
 
@@ -96,11 +98,12 @@ Importing the preset file will allow you to see and modify the configurations un
 
 ### Control Surface does not appear in Live settings:
 
-   * Make sure the `ChocolatePlus` folder is in the `Remote Scripts` folder of the User Library
-   * Restart Live after installation
-   * Folder and filenames are **case-sensitive**
+* Make sure the `ChocolatePlus` folder is in the `Remote Scripts` folder of the User Library
+* Restart Live after installation
+* Folder and filenames are **case-sensitive**
 
 ### Debugging MIDI
+
 1. Set Control Surface to **None** in **Preferences → MIDI → Control Surface**
 2. Create a MIDI track and insert the **MIDI Monitor** MIDI Effect before any other devices. Select **Flow** and then press buttons on the foot switch to see the messages that are received by Live. These should be **CTL** values corresponding to those documented in this README.
 3. Set the Control Surface back to **ChocolatePlus**
