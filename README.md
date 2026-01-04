@@ -76,12 +76,12 @@ Remote Scripts/
 
 ## M-Vave Chocolate Plus Setup
 
-To quickly configure the footswitch the easiest method is to load the included CubeSuite preset file `Advanced custom mode.fcp`:
+To quickly configure the footswitch the easiest method is to load the included [CubeSuite](https://www.cuvave.com/appdownload) preset file `Advanced custom mode.fcp`:
 
 1. Open CubeSuite and connect your M-Vave Chocolate Plus device via USB.
 2. In CubeSuite choose **Import** and select `Advanced custom mode.fcp` from the `ChocolatePlus` script folder.
 
-Importing the preset file will allow you to see and modify the configurations if you would like to make changes.
+Importing the preset file will allow you to see and modify the configurations under **Advanced custom mode**.
 
 ## Usage
 
