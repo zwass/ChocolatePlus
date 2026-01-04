@@ -3,7 +3,6 @@ from _Framework.InputControlElement import MIDI_CC_TYPE
 from _Framework.ButtonElement import ButtonElement
 
 class ChocolatePlus(ControlSurface):
-
     def __init__(self, c_instance):
         super().__init__(c_instance)
 
