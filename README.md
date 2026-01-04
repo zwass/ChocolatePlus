@@ -14,6 +14,10 @@ No Max for Live is required. The script is **persistent across Live updates** if
 | --------------- | --------- | ----------------------------------------------------------- |
 | A (short press) | 0         | Launch the clip in the **currently selected track + scene** |
 | A (long press)  | 1         | Delete the clip in the **currently selected track + scene** |
+| C (short press) | 4         | Select the previous **track**                                   |
+| C (long press)  | 5         | Select the previous **scene**                                   |
+| D (short press) | 6         | Select the next **track**                                       |
+| D (long press)  | 7         | Select the next **scene**                                       |
 
 > Additional CCs can be added to extend functionality (stop clips, scene navigation, etc.)
 
@@ -65,6 +69,10 @@ To quickly configure the footswitch the easiest method is to load the included C
 
 * **A (short press, CC 0):** Launch the clip in the **currently selected track + scene**.
 * **A (long press, CC 1):** Delete the clip in the **currently selected track + scene**.
+* **C (short press, CC 4):** Select the previous track.
+* **C (long press, CC 5):** Select the previous scene.
+* **D (short press, CC 6):** Select the next track.
+* **D (long press, CC 7):** Select the next scene.
 
 > If no clip exists in that slot, pressing delete will do nothing.
 
@@ -72,18 +80,13 @@ To quickly configure the footswitch the easiest method is to load the included C
 
 ## Troubleshooting
 
-1. **Script does not appear in Live:**
+1. **Control Surface does not appear in Live:**
 
    * Make sure the folder is in `~/Music/Ableton/User Library/Remote Scripts/Chocolate`
    * Restart Live after copying the script
    * Folder and filenames are **case-sensitive**
 
-2. **Button does nothing:**
-
-   * Check MIDI input in Live preferences: **Remote = ON**, **Track = OFF**
-   * Verify footswitch sends CC 32 or 33 on channel 1
-
-3. **Testing MIDI:**
+2. **Testing MIDI:**
    Temporarily modify `_on_launch` or `_on_delete` to show a message:
 
    ```python
